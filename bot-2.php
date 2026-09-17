@@ -2,6 +2,18 @@
 
 // ===== FILE: Khadamti.php =====
 
+// ===== إعداد مجلد البيانات الدائم (متوافق مع Render/Docker/VPS) =====
+$DATA_DIR = getenv('BOT_DATA_DIR') ?: __DIR__;
+if (!is_dir($DATA_DIR)) mkdir($DATA_DIR, 0777, true);
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// باقي الملف كما هو...
+
+// ===== FILE: Khadamti.php =====
+
 
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
