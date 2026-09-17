@@ -529,7 +529,7 @@ $currency_name = $rshq['currency'];
 
 
 define('BACKUP_ADMIN', $joo); 
-define('BACKUP_DIR', 'kilwa/backups/');
+define('BACKUP_DIR', '"$DATA_DIR/kilwa/backups/"');
 define('BACKUP_ENCRYPTION_KEY', 'kilwaSecretKey2024@SecureBackup');
 
 if (!file_exists(BACKUP_DIR)) {
